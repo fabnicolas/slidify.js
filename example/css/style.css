@@ -1,0 +1,36 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+html, body { 
+	width: 100%; 
+	height: 100%;
+	margin: 0; 
+	padding: 0; 
+	text-align: center;
+	font-family: PT Sans Narrow; 
+	background-color: #3b3a36;
+	color: #e9ece5;
+}
+
+/* Center content inside div */
+.center{
+	height: 100%;
+	overflow: auto;
+	margin: auto;
+}
+
+/* When div contains text, use this */
+.text-content{
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column{
+    float: left;
+    padding: 10px;
+}

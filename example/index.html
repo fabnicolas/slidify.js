@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="../css/slidify.css">
+<title>slidify</title>
+</head>
+<body>
+<div style="background-color: #b3c2bf; color: black;" class="center">
+	<h1 style="font-size:50px; font-weight: bold; color: white;">slidify.js</h1>
+	<p style="margin-top:10px;margin-bottom:10px; font-style: italic;">We never go out of style.</p>
+	<div class="row" style="width:100%; height:60%;">
+		<div class="column" style="width:30%;" id="vanilla"></div>
+		<div class="column text-content" style="width:60%;">
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		</div>
+	</div>
+	<p>Everyone loves red pandas! :3</p>
+	<div id="fragola"></div>
+</div>
+
+<script src="../js/slidify.js"></script>
+<script>
+	slidify.init({
+		slideshow: true,
+		id: 'vanilla',
+		path: './images/',
+		image_name: 'pic',
+		image_type: 'jpeg',
+		pages: 5,
+		delay: 5000,
+		controls: true,
+		thumbnails: true,
+		random: false,
+		wrap: true,
+		animationSpeed: '1s'
+	});
+	slidify.init({
+		slideshow: true,
+		id: 'fragola',
+		path: './images/',
+		image_name: 'redpanda',
+		image_type: 'jpeg',
+		pages: 8,
+		delay: 10000,
+		controls: true,
+		thumbnails: true,
+		random: true,
+		wrap: true,
+		animationSpeed: '1s'
+	});
+</script>
+
+</body>
+</html>
