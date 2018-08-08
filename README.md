@@ -17,17 +17,20 @@ slidify.JS allows you, web developer, to make slideshows using JavaScript code b
 1. Fork this repository
 2. Open `example/index.html` and change it according to your needs.
 
-In your `<head>` section, assuming CSS path is correct:
+## Option 2
+To include the slideshow in your page/project, follow these instructions:
+
+1. In your `<head>` section, assuming CSS path is correct:
 ```html
 <link rel="stylesheet" href="./css/slidify.css">
 ```
 
-In your `<body>` section, insert your slideshow wherever you want:
+2. In your `<body>` section, insert your slideshow wherever you want:
 ```html
 <div id="your_slideshow"></div>
 ```
 
-And before `</body>` section, assuming JS path is correct and you have `summer1.png`, `summer2.png` and `summer3.png` in `./images/` folder:
+3. And before `</body>` section, assuming JS path is correct and you have `summer1.png`, `summer2.png` and `summer3.png` in `./images/` folder:
 ```html
 <script src="./js/slidify.js"></script>
 <script>
