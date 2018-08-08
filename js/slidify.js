@@ -49,12 +49,12 @@ var DOMUtils = (function(){
 let slidify_slideshow = (function(slideshow_id_param){
     let settings = {
         id: 'slideshow1',   /* The DOM identifier <div id='slideshow1'></div> */
-		path: './slides/',  /* The base path for your images */
-		image_name: 'example',  /* The base image name */
+        path: './slides/',  /* The base path for your images */
+        image_name: 'example',  /* The base image name */
         image_type: 'png',  /* The images extension */
-		image_width: 'auto',    /* Determines how image fits in the container in width */
+        image_width: 'auto',    /* Determines how image fits in the container in width */
         image_height: 'auto',   /* Determines how image fits in the container in height */
-		pages: 1,   /* The number of pages. 2 pages means you have 2 slides 'example1.png' and 'example2.png'. */
+        pages: 1,   /* The number of pages. 2 pages means you have 2 slides 'example1.png' and 'example2.png'. */
         delay: 5000,    /* The transition delay. */
         controls: true, /* Enable navigation controls (For example prev/next buttons). */
         thumbnails: true, /* Enable thumbnails. */
