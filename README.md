@@ -5,7 +5,7 @@ Would you like an easy way to make cool slideshows? Here you go!
 2. whatever they are (University presentations; your summer photos; manga; artwork)...
 ...this library might suit your case.
 
-![An example of a slideshow made with slidify.JS.](README-images/slideshow1.jpg?raw=true "slidify.JS image example #1.")
+![An example of a slideshow made with slidify.JS.](README-images/slideshow1.gif?raw=true "slidify.JS image example #1.")
 
 # JS + CSS?
 Yeah. In the world there exists pure CSS3 slideshows and they are cool too.
