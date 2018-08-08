@@ -30,7 +30,7 @@ To include the slideshow in your page/project, follow these instructions:
 <div id="your_slideshow"></div>
 ```
 
-3. And before `</body>` section, assuming JS path is correct and you have `summer1.png`, `summer2.png` and `summer3.png` in `./images/` folder:
+3. And before `</body>` tag, assuming JS path is correct and you have `summer1.png`, `summer2.png` and `summer3.png` in `./images/` folder:
 ```html
 <script src="./js/slidify.js"></script>
 <script>

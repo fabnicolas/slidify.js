@@ -18,6 +18,19 @@ html, body {
 	margin: auto;
 }
 
+/* Style for title and subtitle */
+.title{
+	font-size:50px;
+	font-weight: bold;
+	color: white;
+}
+
+.subtitle{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-style: italic;
+}
+
 /* When div contains text, use this */
 .text-content{
 	word-break: break-all;
