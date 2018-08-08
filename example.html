@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./css/reset.css">
-<link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" href="../css/slidify.css">
+<link rel="stylesheet" href="./example/css/reset.css">
+<link rel="stylesheet" href="./example/css/style.css">
+<link rel="stylesheet" href="./css/slidify.css">
 <title>slidify</title>
 </head>
 <body>
@@ -22,12 +22,12 @@
 	<div id="fragola"></div>
 </div>
 
-<script src="../js/slidify.js"></script>
+<script src="./js/slidify.js"></script>
 <script>
 	slidify.init({
 		slideshow: true,
 		id: 'vanilla',
-		path: './images/',
+		path: './example/images/',
 		image_name: 'pic',
 		image_type: 'jpeg',
 		pages: 5,
@@ -41,15 +41,16 @@
 	slidify.init({
 		slideshow: true,
 		id: 'fragola',
-		path: './images/',
+		path: './example/images/',
 		image_name: 'redpanda',
 		image_type: 'jpeg',
+		image_width: '100%',
+		image_height: '100%',
 		pages: 8,
 		delay: 10000,
 		controls: true,
 		thumbnails: true,
 		random: true,
-		wrap: true,
 		animationSpeed: '1s'
 	});
 </script>

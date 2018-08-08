@@ -48,21 +48,21 @@ var DOMUtils = (function(){
 
 let slidify_slideshow = (function(slideshow_id_param){
     let settings = {
-        id: 'slideshow1',
-		path: './slides/',
-		image_name: 'example',
-        image_type: 'png',
-		image_width: 'auto',
-        image_height: 'auto',
-		pages: 1,
-        delay: 5000,
-        controls: true,
-        thumbnails: true,
-        thumbnail_type: 'circle',
-        random: false,
-        slideshow: true,
-        wrap: false,
-        animationSpeed: '1s'
+        id: 'slideshow1',   /* The DOM identifier <div id='slideshow1'></div> */
+		path: './slides/',  /* The base path for your images */
+		image_name: 'example',  /* The base image name */
+        image_type: 'png',  /* The images extension */
+		image_width: 'auto',    /* Determines how image fits in the container in width */
+        image_height: 'auto',   /* Determines how image fits in the container in height */
+		pages: 1,   /* The number of pages. 2 pages means you have 2 slides 'example1.png' and 'example2.png'. */
+        delay: 5000,    /* The transition delay. */
+        controls: true, /* Enable navigation controls (For example prev/next buttons). */
+        thumbnails: true, /* Enable thumbnails. */
+        thumbnail_type: 'circle', /* Select thumbnail style. */
+        random: false,  /* If true, the first selected slide is randomly selected. */
+        slideshow: true,  /* If true, this is a slideshow - transitions are enabled. */
+        wrap: false, /* If true, container gets resized to the biggest image provided after DOM is loaded. */
+        animationSpeed: '1s' /* The transition animation speed. */
     }
 
     let slideshow_id=slideshow_id_param;
@@ -130,14 +130,14 @@ let slidify_slideshow = (function(slideshow_id_param){
         DOMUtils.setClass(div_thumbnails,'slidify-thumbnails-container');
 
         let img_previous = document.createElement("img");
-        img_previous.src="./images/slidify-left.gif";
+        img_previous.src="./images/slidify-prev.gif";
 
         let div_previous = document.createElement("div");
         div_previous.id=slideshow_id+"-previous";
         DOMUtils.setClass(div_previous,'slidify-slideshow-previous');
 
         let img_next = document.createElement("img");
-        img_next.src="./images/slidify-right.gif";
+        img_next.src="./images/slidify-next.gif";
 
         let div_next = document.createElement("div");
         div_next.id=slideshow_id+"-next";
